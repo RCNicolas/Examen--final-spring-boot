@@ -137,7 +137,7 @@ spring.datasource.password={CONTRASEÑA SI REQUIERE}
 > [!IMPORTANT]
 > Antes de ejecutar el proyecto debes haber creado la base de datos, ejecuta el siguiente código [multimediaDB](./multimedia/src/main/resources/SQL/multimediaDB.sql) en tu DB MySQL.
 
-- Cambie [application.properties](./fenixgarden/src/main/resources/application.properties) en caso de que haya modificado sus propiedades de MySQL como host, puerto, nombre de usuario o incluso la contraseña.
+- Cambie [application.properties](./multimedia/src/main/resources/application.properties) en caso de que haya modificado sus propiedades de MySQL como host, puerto, nombre de usuario o incluso la contraseña.
     En el archivo `application.properties` modificar las siguientes lineas de codigo
 
     ```XML
