@@ -24,7 +24,7 @@ public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;
     @GetMapping("/usuarios")
-    public List<UsuarioDTO> obtenerTodosLosTipos(){
+    public List<UsuarioDTO> obtenerTodosLosUsuarios(){
         return usuarioService.obtenerUsuarios();
     }
     @PostMapping("/login")

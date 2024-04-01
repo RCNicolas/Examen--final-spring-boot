@@ -35,15 +35,6 @@ public class Genero {
         this.nombre = nombre;
     }
 
-    public List<ContenidoMultimedia> getContenidoMultimedia() {
-        return contenidoMultimedia;
-    }
-
-    public void setContenidoMultimedia(List<ContenidoMultimedia> contenidoMultimedia) {
-        this.contenidoMultimedia = contenidoMultimedia;
-    }
-
-
     public GeneroDTO toDTO(){
         GeneroDTO dto = new GeneroDTO();
         dto.setId(this.idGenero);

@@ -82,7 +82,15 @@ public class ContenidoUsuario {
     }
 
     public void setCalificacion(double calificacion) {
-        this.calificacion = calificacion;
+        ContenidoUsuario contenidoUsuario = new ContenidoUsuario();
+        if (contenidoUsuario.getEstado().equals("Terminado") || contenidoUsuario.getEstado().equals("Abandonado") ){
+
+            this.calificacion = calificacion;
+
+        }else {
+            System.out.println("La calificacion no puede ser agregada si no existe un estado 'Terminado' o 'Abandonado'");
+        }
+
     }
 
     public String getComentario() {
@@ -90,7 +98,16 @@ public class ContenidoUsuario {
     }
 
     public void setComentario(String comentario) {
-        this.comentario = comentario;
+
+        ContenidoUsuario contenidoUsuario = new ContenidoUsuario();
+        if (contenidoUsuario.getEstado().equals("Terminado") || contenidoUsuario.getEstado().equals("Abandonado") ){
+
+            this.comentario = comentario;
+
+        }else {
+            System.out.println("El comentario no puede ser agregada si no existe un estado 'Terminado' o 'Abandonado'");
+        }
+
     }
 
     public ContenidoUsuarioDTO toDTO(){

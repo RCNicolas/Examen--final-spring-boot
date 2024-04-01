@@ -2,6 +2,7 @@ package com.examen.multimedia.models;
 
 import com.examen.multimedia.models.dtos.ContenidoMultimediaDTO;
 import com.examen.multimedia.models.dtos.GeneroDTO;
+import com.examen.multimedia.services.TipoService;
 import jakarta.persistence.*;
 
 @Entity
@@ -51,7 +52,9 @@ public class ContenidoMultimedia {
     }
 
     public void setTipoContenido(TipoContenido tipoContenido) {
+
         this.tipoContenido = tipoContenido;
+
     }
 
     public Genero getGeneroContenido() {
